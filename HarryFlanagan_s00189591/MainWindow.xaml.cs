@@ -26,12 +26,6 @@ namespace HarryFlanagan_s00189591
 
        
         }
-        /*Methods*/
-        public double IncreasePrice(double originalPrice, double percent)
-        {
-            originalPrice = originalPrice + (originalPrice * percent);
 
-            return originalPrice;
-        }
     }
 }
