@@ -39,12 +39,16 @@ namespace HarryFlanagan_s00189591
 
         private void lbxPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //Display the Price of the Phone
+            //Check the selected phone
             Phone selectedPhone = lbxPhones.SelectedItem as Phone;
             if (selectedPhone != null)
             {
                 //Display Phone Price
                 txtblPrice.Text = selectedPhone.Price.ToString("C");
+
+                //Display Phone Image
+                imgPhoneImage.Source = new BitmapImage(new Uri(selectedPhone.PhoneImage));
+
             }
         }
     }
