@@ -20,12 +20,12 @@ namespace HarryFlanagan_s00189591
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Read in Database
         ModelExamContainer db = new ModelExamContainer();
         public MainWindow()
         {
             InitializeComponent();
-
-       
+    
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
