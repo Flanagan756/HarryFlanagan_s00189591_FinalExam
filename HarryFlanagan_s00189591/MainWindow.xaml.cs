@@ -47,7 +47,7 @@ namespace HarryFlanagan_s00189591
                 txtblPrice.Text = selectedPhone.Price.ToString("C");
 
                 //Display Phone Image
-                imgPhoneImage.Source = new BitmapImage(new Uri(selectedPhone.PhoneImage));
+                imgPhoneImage.Source = new BitmapImage(new Uri(selectedPhone.PhoneImage, UriKind.Relative));
 
             }
         }
