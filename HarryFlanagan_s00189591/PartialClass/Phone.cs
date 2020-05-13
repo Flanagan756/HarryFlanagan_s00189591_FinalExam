@@ -13,5 +13,10 @@ namespace HarryFlanagan_s00189591
             return this.Name;
 
         }
+
+        public void IncreasePrice(decimal originalPrice, decimal percent)
+        {
+            Price = originalPrice + (originalPrice * (percent / 100));
+        }
     }
 }

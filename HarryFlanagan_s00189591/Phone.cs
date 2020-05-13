@@ -21,10 +21,7 @@ namespace HarryFlanagan_s00189591
         public string OSImage { get; set; }
         public string PhoneImage { get; set; }
 
-        public void IncreasePrice(decimal originalPrice, decimal percent)
-        {
-            Price = originalPrice + (originalPrice * (percent / 100));
-        }
+    
     }
 
     
