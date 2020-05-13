@@ -17,4 +17,5 @@ namespace HarryFlanagan_s00189591
         public string OS_Image { get; set; }
         public string Phone_Image { get; set; }
     }
+
 }

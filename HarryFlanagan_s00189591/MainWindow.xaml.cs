@@ -23,6 +23,15 @@ namespace HarryFlanagan_s00189591
         public MainWindow()
         {
             InitializeComponent();
+
+       
+        }
+        /*Methods*/
+        public double IncreasePrice(double originalPrice, double percent)
+        {
+            originalPrice = originalPrice + (originalPrice * percent);
+
+            return originalPrice;
         }
     }
 }
