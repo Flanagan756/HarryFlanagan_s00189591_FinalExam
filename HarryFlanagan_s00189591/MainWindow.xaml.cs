@@ -20,6 +20,7 @@ namespace HarryFlanagan_s00189591
     /// </summary>
     public partial class MainWindow : Window
     {
+        ModelExamContainer db = new ModelExamContainer();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,5 +28,13 @@ namespace HarryFlanagan_s00189591
        
         }
 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Put Phones from databse into listbox
+            var query = from p in db.Phones
+                        select p;
+
+            lbxPhones.ItemsSource = query.ToList();
+        }
     }
 }
