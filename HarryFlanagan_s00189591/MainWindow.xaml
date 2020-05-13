@@ -6,8 +6,20 @@
         xmlns:local="clr-namespace:HarryFlanagan_s00189591"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="PhoneTemplate">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Image Source="{Binding OSImage}" Width="30" Height="30"/>
+                <StackPanel>
+                    <TextBlock Text ="{Binding Name}" Margin="5" FontSize="12"/>
+                </StackPanel>
+            </StackPanel>
+
+        </DataTemplate>
+    </Window.Resources>
+
     <Grid>
-        <ListBox x:Name="lbxPhones" HorizontalAlignment="Left" Height="292" Margin="48,57,0,0" VerticalAlignment="Top" Width="238" SelectionChanged="lbxPhones_SelectionChanged"/>
+        <ListBox x:Name="lbxPhones" ItemTemplate="{StaticResource PhoneTemplate}" HorizontalAlignment="Left" Height="292" Margin="48,57,0,0" VerticalAlignment="Top" Width="238" SelectionChanged="lbxPhones_SelectionChanged"/>
         <TextBlock x:Name="txtblPrice" HorizontalAlignment="Left" Margin="479,57,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="49" Width="174"/>
         <Image x:Name="imgPhoneImage" HorizontalAlignment="Left" Height="238" Margin="479,111,0,0" VerticalAlignment="Top" Width="174"/>
 
