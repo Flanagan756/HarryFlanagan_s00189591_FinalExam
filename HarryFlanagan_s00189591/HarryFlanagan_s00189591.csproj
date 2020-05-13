@@ -93,6 +93,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelExam.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PartialClass\Phone.cs" />
     <Compile Include="Phone.cs">
       <DependentUpon>ModelExam.tt</DependentUpon>
     </Compile>

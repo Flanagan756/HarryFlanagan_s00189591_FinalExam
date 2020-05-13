@@ -19,6 +19,6 @@ namespace HarryFlanagan_s00189591
         public decimal Price { get; set; }
         public string OperatingSystem { get; set; }
         public string OSImage { get; set; }
-        public string PhoneImage { get; set; }
+        public string PhoneImage { get; set; } 
     }
 }

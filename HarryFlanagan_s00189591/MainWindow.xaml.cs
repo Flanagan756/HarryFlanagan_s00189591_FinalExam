@@ -36,5 +36,16 @@ namespace HarryFlanagan_s00189591
 
             lbxPhones.ItemsSource = query.ToList();
         }
+
+        private void lbxPhones_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //Display the Price of the Phone
+            Phone selectedPhone = lbxPhones.SelectedItem as Phone;
+            if (selectedPhone != null)
+            {
+                //Display Phone Price
+                txtblPrice.Text = selectedPhone.Price.ToString("C");
+            }
+        }
     }
 }
